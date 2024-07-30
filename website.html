@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frog Jump Animation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgba(255, 255, 255, 0.856);
+            margin: 0;
+          }
+          
+          .frog-container {
+            position: relative;
+            width: 100px;
+            height: 100px;
+          }
+          
+          .frog {
+            width: 100px;
+            height: auto;
+            position: absolute;
+            bottom: 0;
+            animation: jump 2s infinite;
+          }
+          
+          @keyframes jump {
+            0% {
+              bottom: 0;
+              transform: rotate(0deg);
+            }
+            50% {
+              bottom: 200px;
+              transform: rotate(-20deg);
+            }
+            100% {
+              bottom: 0;
+              transform: rotate(0deg);
+            }
+          }
+           
+    </style>
+    <h1> FROG JUMPING ANIMATION</h1>
+  <div class="frog-container">
+    <img src="frog2.jpeg" alt="Jumping Frog" class="frog">
+  </div>
+</body>
+</html>
